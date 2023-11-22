@@ -1,0 +1,14 @@
+Q2. Explain the purpose of comments in HTML and provide an example of how to use comments in an HTML documents.
+Ans. 
+
+    Wherever you put comments in your programm, that piece of code will not be render.
+    
+    Comment is used for understanding code in one look, 
+    it also help to other devloper to figure it out "what this piece code does", who is working with you
+    So many lines of code can not be easily managed if you don't put comments on it..
+
+    You can add comments by "control + /"
+
+    first you have to select lines then press "control+/"
+
+    You can manually add the comments also in HTML documents by typing this <!-- Comment ---> but this is not good practice.

@@ -1,0 +1,10 @@
+Q4. Write a short note on Tag and element with an examples.
+Ans. 
+
+    HTML tags are used to hold the HTML element. HTML element holds the content.
+    For example :
+            <p> is starting tag of paragraph and 
+            </p> is ending tag of paragraph.
+
+            <h1> This is heading </h1> 
+            This whole thing is called heading element
