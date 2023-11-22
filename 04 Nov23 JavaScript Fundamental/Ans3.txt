@@ -1,0 +1,38 @@
+Q3. Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each.
+
+Ans. 
+We can also categories the operators based on how much operands they need to operate.
+
+Unart Operators : This operators accept one operand.
+    EXAPMLE : 
+        console.log(9++)                // 10
+        console.log(++9)                // 10
+
+        --7
+        7--
+
+        console.log(typeof 99)          // number
+        
+
+Binary Operator : This operators accept two operand.
+    EXAMPLE :
+        arithmatic operators (+,-,/,*,%)
+            console.log(8+6)                        // 14
+
+        rational operators (<,>,<=,>=,==,===)
+            console.log(8>6)                        // true
+
+        logical operators (%%,||)
+            console.log(true || false)              // false
+
+        assignment operators (+=,-=,/=,*/)
+            let a = 8
+            a+=7
+
+            console.log(a)                          // 15
+
+Turnary Operator(conditional operators) : This operator accept three operand.
+        EXAMPLE :
+            (condition) ? true : false
+
+            ((userAge >= 18) ? "Access Granted" : "You are not 18 right now, Sorry ")
