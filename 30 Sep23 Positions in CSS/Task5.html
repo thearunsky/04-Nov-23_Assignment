@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task-5 z-index</title>
+
+    <style>
+        /* All boxes have absolute position, so all div's overlapping to each other */
+        .boxes{
+            position: absolute;
+            background-color: white;
+        }
+
+        /* z-index is the CSS property which control stacking order of overlapping element */
+        /* So here, we give highest z-index number to .second class, so it is displaying first*/
+        /* Then we give  10 to .first class, so it have less priority than .second class*/
+        /* And lastly .third it have very least priority */
+
+        /* Priority : second-first-third */
+        .first{
+            z-index: 10;
+        }
+        .second{
+            z-index: 12;
+        }
+        .third{
+            z-index: 3;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="boxes first">
+            <h1>1st Heading</h1>
+        </div>
+        <div class="boxes second">
+            <h1>2nd Heading</h1>
+        </div>
+        <div class="boxes third">
+            <h1>3rd Heading</h1>
+        </div>
+    </div>
+</body>
+</html>

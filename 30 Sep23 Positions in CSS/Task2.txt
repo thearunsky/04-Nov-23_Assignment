@@ -1,0 +1,15 @@
+Problem Statement :
+Explain the difference between Absolute and Relative positionin.
+Ans.
+
+    Relative positionin :
+        The element is positioned related to its own position. It will not impact other it's siblings and elements.
+        We can move this using some properties such as,
+            top,bottom,left,right
+
+
+    Absolute positionin : 
+        The element is positioned related to its first positioned parent.
+        This is Layering property of CSS. Thought out this we can do layering without impacting other HTML element and siblings.
+        We can move this using some properties such as,
+        top,bottom,left,right

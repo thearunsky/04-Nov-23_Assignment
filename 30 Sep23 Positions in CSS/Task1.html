@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <style>
+
+        /* Constants :- To make squar border with relative */
+        .main{
+            border: 1px solid black;
+            height: 110px;
+            width: 110px;
+            position: relative;
+        }
+        /* Constants :- All boxes should have this color,height,width,absolute */
+        .box {
+            background-color: #00ffff;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+        }
+        /* Constants */
+        .box h4{
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Moving div */
+        .boxA{
+            top: 30px;
+            left: 30px;
+        }
+        .boxB{
+            top: 0px;
+            left: 0px;
+        }
+        .boxC{
+            top: 0px;
+            right: 0px;
+        }
+        .boxD{
+            bottom: 0px;
+            left: 0px;
+        }
+        .boxE{
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- This all divs have absolute position, so it can be work in different layer -->
+        <div class="box boxA">
+            <h4>A</h4>
+        </div>
+        <div class="box boxB">
+            <h4>B</h4>
+        </div>
+        <div class="box boxC">
+            <h4>C</h4>
+        </div>
+        <div class="box boxD">
+            <h4>D</h4>
+        </div>
+        <div class="box boxE">
+            <h4>E</h4>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

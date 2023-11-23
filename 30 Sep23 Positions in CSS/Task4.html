@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task-4 Sticky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Just these two line of code make this main-div sticky on top */
+        .main{
+            position: sticky;
+            top: 0;
+        }
+
+        .header {
+            background-color: rgba(64, 20, 20, 0.906);
+            color: white;
+            height: 100px;
+            position: relative;
+        }
+
+        .logo {
+            width: 100px;
+            display: inline-block;
+            top: 30%;
+
+        }
+
+        .logo h2 {
+            display: flex;
+            justify-content: center;
+            padding-top: 30%;
+        }
+
+        .links {
+            display: inline-block;
+            position: absolute;
+            right: 0px;
+            top: 30%;
+        }
+
+        .links ul {
+            list-style: none;
+        }
+
+        .links ul li {
+            float: left;
+            margin-left: 20px;
+        }
+
+        /* Some styling */
+        .links ul li button {
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .links ul li button:hover {
+            background-color: blueviolet;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .links ul li:hover {
+            cursor: pointer;
+            color: aqua;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <h2>LOGO</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li>Home</li>
+                    <li>Price</li>
+                    <li>Contact</li>
+                    <li>Terms and condition</li>
+                    <li><button>Get Started</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dummy content -->
+    <div class="content">
+        <div style="margin-top:20px;">
+            <h1>This is 1st Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt libero voluptatum nemo ad harum
+                vel laborum! Hic dolorem nisi expedita iure aliquid magnam, provident dolore voluptas, sapiente, aspernatur
+                quos. Perferendis animi est deleniti, fuga reiciendis ratione ad! Dolore dignissimos natus velit facere
+                illum, deserunt a fuga harum ratione facilis nisi quis sequi et quos ex cumque quibusdam enim aspernatur
+                voluptate impedit itaque explicabo inventore recusandae. Ea consequatur, placeat asperiores tenetur dolor
+                amet. Et ducimus hic placeat, accusamus totam voluptatum omnis laboriosam ratione, molestiae cum illo
+                corporis praesentium saepe veritatis perferendis. Voluptatum similique ullam, facilis nulla odit saepe optio
+                exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nobis beatae saepe ipsum
+                voluptas inventore magni excepturi deserunt aut a aperiam laudantium quibusdam nam, assumenda et, unde
+                corrupti quisquam corporis? Quaerat laborum harum voluptate quam ipsum, quos quia rerum velit inventore sunt
+                illum similique assumenda, odio quo exercitationem. Maiores ea nisi veniam corporis corrupti aliquid sed
+                sequi impedit sit totam, suscipit laudantium incidunt quisquam nemo at quo commodi est beatae obcaecati
+                excepturi in nihil blanditiis cumque quas. Tenetur doloribus ipsam laudantium reprehenderit fugit, magnam
+                perspiciatis commodi doloremque eos aut porro eveniet architecto, numquam laborum sit repudiandae maxime,
+                velit sapiente nulla.</p>
+        </div>
+        <div style="margin-top:20px;">
+            <h1>This is 2st Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt libero voluptatum nemo ad harum
+                vel laborum! Hic dolorem nisi expedita iure aliquid magnam, provident dolore voluptas, sapiente, aspernatur
+                quos. Perferendis animi est deleniti, fuga reiciendis ratione ad! Dolore dignissimos natus velit facere
+                illum, deserunt a fuga harum ratione facilis nisi quis sequi et quos ex cumque quibusdam enim aspernatur
+                voluptate impedit itaque explicabo inventore recusandae. Ea consequatur, placeat asperiores tenetur dolor
+                amet. Et ducimus hic placeat, accusamus totam voluptatum omnis laboriosam ratione, molestiae cum illo
+                corporis praesentium saepe veritatis perferendis. Voluptatum similique ullam, facilis nulla odit saepe optio
+                exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nobis beatae saepe ipsum
+                voluptas inventore magni excepturi deserunt aut a aperiam laudantium quibusdam nam, assumenda et, unde
+                corrupti quisquam corporis? Quaerat laborum harum voluptate quam ipsum, quos quia rerum velit inventore sunt
+                illum similique assumenda, odio quo exercitationem. Maiores ea nisi veniam corporis corrupti aliquid sed
+                sequi impedit sit totam, suscipit laudantium incidunt quisquam nemo at quo commodi est beatae obcaecati
+                excepturi in nihil blanditiis cumque quas. Tenetur doloribus ipsam laudantium reprehenderit fugit, magnam
+                perspiciatis commodi doloremque eos aut porro eveniet architecto, numquam laborum sit repudiandae maxime,
+                velit sapiente nulla.</p>
+        </div>
+        <div style="margin-top:20px;">
+            <h1>This is 3st Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt libero voluptatum nemo ad harum
+                vel laborum! Hic dolorem nisi expedita iure aliquid magnam, provident dolore voluptas, sapiente, aspernatur
+                quos. Perferendis animi est deleniti, fuga reiciendis ratione ad! Dolore dignissimos natus velit facere
+                illum, deserunt a fuga harum ratione facilis nisi quis sequi et quos ex cumque quibusdam enim aspernatur
+                voluptate impedit itaque explicabo inventore recusandae. Ea consequatur, placeat asperiores tenetur dolor
+                amet. Et ducimus hic placeat, accusamus totam voluptatum omnis laboriosam ratione, molestiae cum illo
+                corporis praesentium saepe veritatis perferendis. Voluptatum similique ullam, facilis nulla odit saepe optio
+                exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nobis beatae saepe ipsum
+                voluptas inventore magni excepturi deserunt aut a aperiam laudantium quibusdam nam, assumenda et, unde
+                corrupti quisquam corporis? Quaerat laborum harum voluptate quam ipsum, quos quia rerum velit inventore sunt
+                illum similique assumenda, odio quo exercitationem. Maiores ea nisi veniam corporis corrupti aliquid sed
+                sequi impedit sit totam, suscipit laudantium incidunt quisquam nemo at quo commodi est beatae obcaecati
+                excepturi in nihil blanditiis cumque quas. Tenetur doloribus ipsam laudantium reprehenderit fugit, magnam
+                perspiciatis commodi doloremque eos aut porro eveniet architecto, numquam laborum sit repudiandae maxime,
+                velit sapiente nulla.</p>
+        </div>
+        <div style="margin-top:20px;">
+            <h1>This is 4st Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt libero voluptatum nemo ad harum
+                vel laborum! Hic dolorem nisi expedita iure aliquid magnam, provident dolore voluptas, sapiente, aspernatur
+                quos. Perferendis animi est deleniti, fuga reiciendis ratione ad! Dolore dignissimos natus velit facere
+                illum, deserunt a fuga harum ratione facilis nisi quis sequi et quos ex cumque quibusdam enim aspernatur
+                voluptate impedit itaque explicabo inventore recusandae. Ea consequatur, placeat asperiores tenetur dolor
+                amet. Et ducimus hic placeat, accusamus totam voluptatum omnis laboriosam ratione, molestiae cum illo
+                corporis praesentium saepe veritatis perferendis. Voluptatum similique ullam, facilis nulla odit saepe optio
+                exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nobis beatae saepe ipsum
+                voluptas inventore magni excepturi deserunt aut a aperiam laudantium quibusdam nam, assumenda et, unde
+                corrupti quisquam corporis? Quaerat laborum harum voluptate quam ipsum, quos quia rerum velit inventore sunt
+                illum similique assumenda, odio quo exercitationem. Maiores ea nisi veniam corporis corrupti aliquid sed
+                sequi impedit sit totam, suscipit laudantium incidunt quisquam nemo at quo commodi est beatae obcaecati
+                excepturi in nihil blanditiis cumque quas. Tenetur doloribus ipsam laudantium reprehenderit fugit, magnam
+                perspiciatis commodi doloremque eos aut porro eveniet architecto, numquam laborum sit repudiandae maxime,
+                velit sapiente nulla.</p>
+        </div>
+        <div style="margin-top:20px;">
+            <h1>This is 5st Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt libero voluptatum nemo ad harum
+                vel laborum! Hic dolorem nisi expedita iure aliquid magnam, provident dolore voluptas, sapiente, aspernatur
+                quos. Perferendis animi est deleniti, fuga reiciendis ratione ad! Dolore dignissimos natus velit facere
+                illum, deserunt a fuga harum ratione facilis nisi quis sequi et quos ex cumque quibusdam enim aspernatur
+                voluptate impedit itaque explicabo inventore recusandae. Ea consequatur, placeat asperiores tenetur dolor
+                amet. Et ducimus hic placeat, accusamus totam voluptatum omnis laboriosam ratione, molestiae cum illo
+                corporis praesentium saepe veritatis perferendis. Voluptatum similique ullam, facilis nulla odit saepe optio
+                exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nobis beatae saepe ipsum
+                voluptas inventore magni excepturi deserunt aut a aperiam laudantium quibusdam nam, assumenda et, unde
+                corrupti quisquam corporis? Quaerat laborum harum voluptate quam ipsum, quos quia rerum velit inventore sunt
+                illum similique assumenda, odio quo exercitationem. Maiores ea nisi veniam corporis corrupti aliquid sed
+                sequi impedit sit totam, suscipit laudantium incidunt quisquam nemo at quo commodi est beatae obcaecati
+                excepturi in nihil blanditiis cumque quas. Tenetur doloribus ipsam laudantium reprehenderit fugit, magnam
+                perspiciatis commodi doloremque eos aut porro eveniet architecto, numquam laborum sit repudiandae maxime,
+                velit sapiente nulla.</p>
+        </div>
+        <div style="margin-top:20px;">
+            <h1>This is 6st Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt libero voluptatum nemo ad harum
+                vel laborum! Hic dolorem nisi expedita iure aliquid magnam, provident dolore voluptas, sapiente, aspernatur
+                quos. Perferendis animi est deleniti, fuga reiciendis ratione ad! Dolore dignissimos natus velit facere
+                illum, deserunt a fuga harum ratione facilis nisi quis sequi et quos ex cumque quibusdam enim aspernatur
+                voluptate impedit itaque explicabo inventore recusandae. Ea consequatur, placeat asperiores tenetur dolor
+                amet. Et ducimus hic placeat, accusamus totam voluptatum omnis laboriosam ratione, molestiae cum illo
+                corporis praesentium saepe veritatis perferendis. Voluptatum similique ullam, facilis nulla odit saepe optio
+                exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nobis beatae saepe ipsum
+                voluptas inventore magni excepturi deserunt aut a aperiam laudantium quibusdam nam, assumenda et, unde
+                corrupti quisquam corporis? Quaerat laborum harum voluptate quam ipsum, quos quia rerum velit inventore sunt
+                illum similique assumenda, odio quo exercitationem. Maiores ea nisi veniam corporis corrupti aliquid sed
+                sequi impedit sit totam, suscipit laudantium incidunt quisquam nemo at quo commodi est beatae obcaecati
+                excepturi in nihil blanditiis cumque quas. Tenetur doloribus ipsam laudantium reprehenderit fugit, magnam
+                perspiciatis commodi doloremque eos aut porro eveniet architecto, numquam laborum sit repudiandae maxime,
+                velit sapiente nulla.</p>
+        </div>
+        <div style="margin-top:20px;">
+            <h1>This is 7st Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt libero voluptatum nemo ad harum
+                vel laborum! Hic dolorem nisi expedita iure aliquid magnam, provident dolore voluptas, sapiente, aspernatur
+                quos. Perferendis animi est deleniti, fuga reiciendis ratione ad! Dolore dignissimos natus velit facere
+                illum, deserunt a fuga harum ratione facilis nisi quis sequi et quos ex cumque quibusdam enim aspernatur
+                voluptate impedit itaque explicabo inventore recusandae. Ea consequatur, placeat asperiores tenetur dolor
+                amet. Et ducimus hic placeat, accusamus totam voluptatum omnis laboriosam ratione, molestiae cum illo
+                corporis praesentium saepe veritatis perferendis. Voluptatum similique ullam, facilis nulla odit saepe optio
+                exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nobis beatae saepe ipsum
+                voluptas inventore magni excepturi deserunt aut a aperiam laudantium quibusdam nam, assumenda et, unde
+                corrupti quisquam corporis? Quaerat laborum harum voluptate quam ipsum, quos quia rerum velit inventore sunt
+                illum similique assumenda, odio quo exercitationem. Maiores ea nisi veniam corporis corrupti aliquid sed
+                sequi impedit sit totam, suscipit laudantium incidunt quisquam nemo at quo commodi est beatae obcaecati
+                excepturi in nihil blanditiis cumque quas. Tenetur doloribus ipsam laudantium reprehenderit fugit, magnam
+                perspiciatis commodi doloremque eos aut porro eveniet architecto, numquam laborum sit repudiandae maxime,
+                velit sapiente nulla.</p>
+        </div>
+        <div style="margin-top:20px;">
+            <h1>This is 7st Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt libero voluptatum nemo ad harum
+                vel laborum! Hic dolorem nisi expedita iure aliquid magnam, provident dolore voluptas, sapiente, aspernatur
+                quos. Perferendis animi est deleniti, fuga reiciendis ratione ad! Dolore dignissimos natus velit facere
+                illum, deserunt a fuga harum ratione facilis nisi quis sequi et quos ex cumque quibusdam enim aspernatur
+                voluptate impedit itaque explicabo inventore recusandae. Ea consequatur, placeat asperiores tenetur dolor
+                amet. Et ducimus hic placeat, accusamus totam voluptatum omnis laboriosam ratione, molestiae cum illo
+                corporis praesentium saepe veritatis perferendis. Voluptatum similique ullam, facilis nulla odit saepe optio
+                exercitationem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus nobis beatae saepe ipsum
+                voluptas inventore magni excepturi deserunt aut a aperiam laudantium quibusdam nam, assumenda et, unde
+                corrupti quisquam corporis? Quaerat laborum harum voluptate quam ipsum, quos quia rerum velit inventore sunt
+                illum similique assumenda, odio quo exercitationem. Maiores ea nisi veniam corporis corrupti aliquid sed
+                sequi impedit sit totam, suscipit laudantium incidunt quisquam nemo at quo commodi est beatae obcaecati
+                excepturi in nihil blanditiis cumque quas. Tenetur doloribus ipsam laudantium reprehenderit fugit, magnam
+                perspiciatis commodi doloremque eos aut porro eveniet architecto, numquam laborum sit repudiandae maxime,
+                velit sapiente nulla.</p>
+        </div>
+    </div>
+</body>
+
+</html>
