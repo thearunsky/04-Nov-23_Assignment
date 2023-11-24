@@ -3,46 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Task-5 z-index</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5 z-index</title>
     <style>
-        /* All boxes have absolute position, so all div's overlapping to each other */
-        .boxes{
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            background-color: yellow;
+            color: white;
+            width: 350px;
+            height: 350px;
+            display: inline-block;
+
+            /* So all absolute position can relate to this div */
+            position: relative;
+        }
+
+        .box {
+            width: 125px;
+            height: 125px;
             position: absolute;
-            background-color: white;
+
+            /* In order to center content */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
 
-        /* z-index is the CSS property which control stacking order of overlapping element */
-        /* So here, we give highest z-index number to .second class, so it is displaying first*/
-        /* Then we give  10 to .first class, so it have less priority than .second class*/
-        /* And lastly .third it have very least priority */
+        .first {
+            background-color: rgb(49, 49, 41);
 
-        /* Priority : second-first-third */
-        .first{
-            z-index: 10;
-        }
-        .second{
-            z-index: 12;
-        }
-        .third{
-            z-index: 3;
+            z-index: 2;
         }
 
+        .second {
+            background-color: rgb(59, 174, 59);
+
+            top: 75px;
+            left: 75px;
+            z-index: 4;
+        }
+
+        .third {
+            background-color: rgb(30, 30, 176);
+
+            top: 150px;
+            left: 150px;
+            z-index: 5;
+        }
+
+        .forth {
+            background-color: rgb(176, 30, 59);
+            top: 225px;
+            left: 225px;
+            z-index: 1;
+        }
+
+        .content {
+            display: inline-block;
+            width: 50%;
+        }
     </style>
-
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="boxes first">
-            <h1>1st Heading</h1>
+
+
+    <div class="content">
+        <h1>z-index is the CSS property which control stacking order of overlapping element </h1>
+        <hr>
+        <h3 style="margin-top: 30px;">1 : Priority :- So here, we give highest (z-index:5;) to (BLUE COLOR BOX), so it is displaying first</h3>
+        <h3 style="margin-top: 30px;">2 : Priority :- Then we give (z-index:4;) to (GREEN COLOR BOX), so it will placed below the z-index number(5)</h3>
+        <h3 style="margin-top: 30px;">2 : Priority :- Then we give (z-index:2;) to (BLACK COLOR BOX), so it will placed below the z-index number(4)</h3>
+        <h3 style="margin-top: 30px;">2 : Priority :- Then we give (z-index:1;) to (RED COLOR BOX), so it will placed below the z-index number(2)</h3>
+
+    </div>
+
+    <div class="main">
+        <div class="box first">
+            <p>z-index:2;</p>
         </div>
-        <div class="boxes second">
-            <h1>2nd Heading</h1>
+        <div class="box second">
+            <p>z-index:4;</p>
         </div>
-        <div class="boxes third">
-            <h1>3rd Heading</h1>
+        <div class="box third">
+            <p>z-index:5;</p>
+        </div>
+        <div class="box forth">
+            <p>z-index:1;</p>
         </div>
     </div>
+
+
 </body>
+
 </html>
