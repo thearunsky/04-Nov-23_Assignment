@@ -1,0 +1,54 @@
+Loops in programming are used to repeatedly execute a block of code as long as a certain condition is true.
+JavaScript provides several types of loops, each with its own syntax and use cases.
+
+    SYNTAX AND EXAMPLE :
+
+        FOR LOOP 
+
+            for (initialization; condition; iteration) {
+                // Code to be executed in each iteration
+            }
+
+            for (let i = 0; i < 5; i++) {
+                console.log(i);                         // Prints 0, 1, 2, 3, 4
+            }
+
+
+        WHILE LOOP 
+
+            while (condition) {
+                // Code to be executed while the condition is true
+            }
+
+            let i = 0;
+                while (i < 5) {
+                    console.log(i); // Prints 0, 1, 2, 3, 4
+                    i++;
+                }
+        
+        FOR OF LOOP
+
+            for (variable of iterable) {
+                // Code to be executed for each element in the iterable
+            }
+
+
+            const array = [1, 2, 3, 4];
+            for (const element of array) {
+                console.log(element);                        // Prints 1, 2, 3, 4
+            }
+
+        FOR IN LOOP
+            for (variable in object) {
+                // Code to be executed for each property in the object
+            }
+
+
+            const person = { name: 'John', age: 30, job: 'developer' };
+            for (const key in person) {
+                console.log(`${key}: ${person[key]}`); // Prints name: John, age: 30, job: developer
+            }
+
+
+
+

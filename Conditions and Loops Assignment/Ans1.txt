@@ -1,0 +1,27 @@
+Conditional statements in JavaScript are used to make decisions in your code based on certain conditions. 
+These statements allow your program to execute different blocks of code depending on whether a specified condition evaluates to true or false. 
+
+    SYNTAX :
+
+        if (condition1) {
+            // Code to be executed if condition1 is true
+
+        } else if (condition2) {
+            // Code to be executed if condition2 is true
+            
+        } else {
+            // Code to be executed if none of the conditions are true
+        }
+    
+    EXAPMLE :
+        let temperature = 25;
+
+        if (temperature > 30) {
+            console.log("It's a hot day!");
+
+        } else if (temperature >= 20 && temperature <= 30) {
+            console.log("The weather is pleasant.");
+
+        } else {
+            console.log("It's cold outside.");
+        }
