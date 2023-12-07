@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .parent{
+            display: grid;
+            grid-template-areas: 
+                    "HEAD HEAD HEADRIGHT"
+                    "LEFT MID RIGHT"
+                    "LEFT MID RIGHT"
+                    "LEFT MIDDOWN RIGHT"
+                    "LEFT MIDDOWN RIGHT"
+
+            ;
+            height: 100vh;
+            gap: 10px;
+        }
+
+        .head{
+            background-color: green;
+            grid-area: HEAD;
+        }
+        .left{
+            background-color: yellow;
+            grid-area: LEFT;
+        }
+        .right{
+            background-color: pink;
+            grid-area: RIGHT;
+        }
+        .headRight{
+            background-color: rgb(162, 15, 40);
+            grid-area: HEADRIGHT;
+        }
+        .mid{
+            background-color: blue;
+            grid-area: MID;
+        }
+        .midDown{
+            background-color: rgb(20, 20, 128);
+            grid-area: MIDDOWN;
+        }
+        .child{
+            color: white;
+            font-size: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child head"><img src="./imgs/u1.PNG" alt="" srcset=""></div>
+        <div class="child headRight"><img src="./imgs/u2.PNG" alt="" srcset=""></div>
+        <div class="child left"><img src="./imgs/dl.PNG" alt="" srcset=""></div>
+        <div class="child mid"><img src="./imgs/dmu.PNG" alt="" srcset=""></div>
+        <div class="child midDown"><img src="./imgs/dmb.PNG" alt="" srcset=""></div>
+        <div class="child right"><img src="./imgs/dr.PNG" alt="" srcset=""></div>
+    </div>
+    
+</body>
+</html>

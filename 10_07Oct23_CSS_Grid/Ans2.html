@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            border: 1px solid black;
+            margin: 5%;
+            padding: 5%;
+            height: 50vh;
+            
+            display: grid;
+            grid-template-areas: 
+                "A A B" 
+                "C D B" 
+            ;
+            gap: 10px;
+        }
+
+        .a{
+            grid-area: A;
+        }
+        .b{
+            grid-area: B;
+        }
+        .c{
+            grid-area: C;
+        }
+        .d{
+            grid-area: D;
+        }
+        .child{
+            background-color: pink;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="a child">A</div>
+        <div class="b child">B</div>
+        <div class="c child">C</div>
+        <div class="d child">D</div>
+    </div>
+    
+</body>
+</html>
