@@ -1,0 +1,70 @@
+body{
+    height: 97vh;
+    
+    /* So that we can center whole div */
+    display: flex;
+    justify-content: center;
+}
+#container {
+    background-color: rgb(207, 194, 194);
+    border: 1px solid black;
+    padding: 20px 40px;
+    height: 70%;
+    width: 70%;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    
+}
+.content{
+    height: 100%;
+
+    /* So all div divide into equal parts */
+    flex-grow: 1;
+}
+.inner{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px 0px;
+    margin: 30px;
+}
+.inner:hover{
+    color: white;
+    background-color: rgb(9, 26, 78);
+
+    /* It takes 0.6 seconds to change colors */
+    transition: 0.6s;
+}
+.btn{
+
+    /* So we can center our button */
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    border-radius: 30px;
+    padding: 15px 20px;
+    color: white;
+    background-color: rgba(22, 22, 133, 0.852);
+}
+.btn button:hover{
+    color: black;
+    background-color: white;
+    transition: 0.6s;
+}
+.centerMe{
+    text-align: center;
+}
+.innerDiv{
+    padding: 10px 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+button {
+    border: none;
+}
