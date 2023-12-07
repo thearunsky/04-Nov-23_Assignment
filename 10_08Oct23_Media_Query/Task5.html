@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* Using 100% or width and height */
+        /* Display flex so that all div can align in one row */
+        .main {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+
+        .box {
+            color: white;
+            font-size: 30px;
+        }
+
+        /* Mid div will grab 80% of width */
+        .mid {
+            width: 80%;
+        }
+        
+        /* Rest div will grab 10-10% of width */
+        .box1,
+        .box4 {
+            width: 10%;
+            background-color: black;
+        }
+
+        .box2 {
+            background-color: green;
+        }
+
+        .box3 {
+            background-color: orange;
+        }
+
+        /* Mid div's div will grab 50-50% of height */
+        .box2,
+        .box3 {
+            height: 50%;
+        }
+
+        @media screen and (max-width:700px) {
+
+            /* display is block, so that all div's align verticaly */
+            /* Puttin postion-relative, so that one last div can adjest by this main div */
+            .main {
+                display: block;
+                position: relative;
+            }
+
+            .mid {
+                width: 100%;
+                height: 20%;
+            }
+
+            .box2,
+            .box3 {
+                height: 50%;
+            }
+
+            .box1,
+            .box4 {
+                width: 100%;
+                height: 10%;
+            }
+
+            /* It will go down */
+            .box4 {
+                position: absolute;
+                bottom: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box box1">Box 1</div>
+
+        <div class="mid">
+            <div class="box box2">Box 2</div>
+            <div class="box box3">Box 3</div>
+        </div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+
+</html>
