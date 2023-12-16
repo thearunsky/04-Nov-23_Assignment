@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .internalStyle {
+            height: 200px;
+            width: 500px;
+            background-color: pink;
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="./Ans1.css">
+</head>
+
+<body style="display: flex;">
+    <!-- This is usning inline CSS using style attribute -->
+    <div style="border:1px solid black; width: 500px; height: 200px; color:  white; background-color: black;">
+        <p>This div used Inline CSS</p>
+        <p>Inline CSS's priortiy is highest</p>
+        <p>It has following proopertys : </p>
+        <ul>
+            <li>border:1px solid black; </li>
+            <li>width: 500px; </li>
+            <li>height: 200px; </li>
+            <li>color: white; </li>
+            <li>background-color: black;</li>
+        </ul>
+    </div>
+    
+    <!-- This is usning internal CSS using style attribute -->
+    <div class="internalStyle">
+        <p>This div used Internal CSS</p>
+        <p>Internal CSS's priortiy is highest than external and lowest than inline</p>
+        <p>It has following proopertys : </p>
+        <ul>
+            <li>height: 200px;</li>
+            <li>width: 500px;</li>
+            <li>background-color: pink;</li>
+            <li>color: black;</li>
+        </ul>
+    </div>
+    <!-- This is usning external CSS using style attribute -->
+    <div class="externalCSS">
+        <p>This div used External CSS</p>
+        <p>Internal CSS's priortiy is lowest between all amoungb them</p>
+        <p>It has following proopertys : </p>
+        <ul>
+            <li>height: 200px;</li>
+            <li>width: 500px;</li>
+            <li>background-color: green;</li>
+            <li>color: white;</li>
+        </ul>
+    </div>
+</body>
+
+</html>
