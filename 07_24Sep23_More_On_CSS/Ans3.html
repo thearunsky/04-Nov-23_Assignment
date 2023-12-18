@@ -1,0 +1,68 @@
+<!-- Create a navigation bar similar to the below-mentioned image. The navigation bar must 'ontain 5
+navigation links that are !ro!erly !la'ed within the navigation bar using the CSS box model. The navigation
+items must 'hange their text 'olor on hover -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ans 1</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        nav{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            background-color: blue;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        li{
+            margin: 0px 40px;
+        }
+        a{
+            color: white;
+        }
+        .home{
+            border-style:groove;
+            padding: 10px;
+        }
+        .about{
+            border-style:dashed;
+            border-color: white;
+            padding: 10px;
+        }
+        .contact{
+            border-style:dotted;
+            border-color: white;
+            padding: 10px;
+        }
+        .blog{
+            border-style:ridge;
+            border-color: white;
+            padding: 10px;
+        }
+        .login{
+            border-style:inset;
+            border-color: white;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="home"><a href="#">Home</a></li>
+            <li class="about"><a href="#">About us</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+            <li class="blog"><a href="#">Blog</a></li>
+            <li class="login"><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
