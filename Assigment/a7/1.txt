@@ -1,0 +1,14 @@
+function fetchMultipleResources(arr){
+    let promises = []
+    arr.forEach((e)=>{
+        promises.push(fetch(e).then((res)=>{return res.json()}))
+    })
+    console.log(promises)
+    Promise.allSettled(promises).then((promisesArray)=>{
+        promisesArray.forEach((element)=>{console.log(element.value)})
+    })
+    
+}
+
+fetchMultipleResources(["https://dummyjson.com/products/1",
+"https://dummyjson.com/products/2","https://dummyjson.com/products/randomAPI"])

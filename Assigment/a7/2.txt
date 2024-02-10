@@ -1,0 +1,23 @@
+function createPromise(sec){
+    return new Promise((res,rej)=>{
+        setTimeout(()=>{
+            const random = parseInt(Math.random()*10)
+            if(random<=5){
+                console.log("Ressolved")
+                res(random)
+            }else{
+                console.log("Rejected")
+                rej(random)
+            }
+        },sec*1000)
+    })
+}
+
+
+function fetchMultipleResources(arr){
+    Promise.allSettled(arr).then((promisesArray)=>{
+        promisesArray.forEach((element)=>{console.log(element)})
+    })
+}
+const arr = [createPromise(3),createPromise(3),createPromise(3)]
+fetchMultipleResources(arr)
